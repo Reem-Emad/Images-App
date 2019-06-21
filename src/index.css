@@ -1,13 +1,166 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family:  "Mali", cursive, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #4B334C !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.header
+{
+  background-color: #755671 !important;
+}
+.images-container
+{
+ display: flex;
+ flex-wrap: wrap; 
+ margin: 4rem;
+
+}
+.image-card
+{
+  width: 14rem;
+   margin: 0.5rem;
+   min-height: 10rem;
+   
+}
+.image
+{
+  transition: transform .4s ease;
+}
+.image-container
+{
+  overflow: hidden;
+}
+.overlay
+{
+  background-color: #755671e5 !important;
+  bottom: 76px !important;
+  display:none;
+  margin:auto;
+  padding: 0.5rem !important;
+}
+.overlay-body
+{
+  border: 2px solid white;
+  border-radius: 2rem;
+  padding: 1rem !important;
+  height: 100%;
+ 
+}
+.overlay-text
+{
+  color: white !important;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.11rem !important;
+
+  
+
+}
+.overlay-text-series
+{
+  color: #F3B900;
+  font-weight: 600;
+}
+.overlay-button
+{
+  background-color: #F54A42 !important;
+  border-color: #F54A42 !important; 
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  position: relative;
+  width:100% !important;
+  
+}
+.overlay-button:hover
+{
+  background-color: #F3B900 !important;
+  border-color: #F3B900 !important; 
+  /* color: */
+}
+.image-card:hover
+{
+
+  border-color: #755671e5 !important;
+  overflow: hidden;
+
+}
+.image-card:hover .overlay
+{
+     display: block;
+}
+.image-card:hover .image
+{
+  transform: scale(1.1);
+}
+.image-card-body
+{
+  background-color: #FFD1D0 !important;
+  display:flex;
+  justify-content: space-between;
+}
+.dots-icon
+{
+  margin-top: 4px;
+  color: #F54A42 !important;
+  cursor: pointer;
+  
+}
+.image-card-title
+{
+  color: #F54A42 !important;
+  font-weight: 600 !important;
+}
+.popover-list
+{
+  list-style-type: none;
+  padding-left: 10px !important;
+}
+.popover-item
+{
+  margin: 1rem;
+  font-family:  "Mali";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4B334C;
+}
+.popover-item:hover
+{
+  color:#F3B900;
+  cursor: pointer;
+
+}
+.nav-form
+{
+  margin: auto;
+}
+.nav-search-box
+{
+  width:500px !important;
+}
+.error-container
+{
+  border: 3px solid white;
+  border-radius: 0.5rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 15%;
+  padding: 2rem; 
+  color:white;
+}
+.error-head
+{
+  font-size: 4rem;
+}
+.error-body
+{
+  font-size: 2rem;
+
 }
